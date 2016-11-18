@@ -19,7 +19,7 @@ gem "mimemagic"
 
 gem "nokogiri", "~> 1.6.8"
 
-# Request at least rails-html-sanitizer 1.0.3 because of security advisories 
+# Request at least rails-html-sanitizer 1.0.3 because of security advisories
 gem "rails-html-sanitizer", ">= 1.0.3"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -93,6 +93,7 @@ else
 end
 
 group :development do
+  gem 'elastic-beanstalk'
   gem "rdoc", "~> 4.3"
   gem "yard"
 end
