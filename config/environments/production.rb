@@ -22,4 +22,8 @@ Rails.application.configure do
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+
+  # Force ssl
+  config.force_ssl = true
+  config.ssl_options = { host: "redmine.veygo.co" }
 end
